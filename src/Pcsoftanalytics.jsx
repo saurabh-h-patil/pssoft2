@@ -485,14 +485,21 @@ export default function PCSoftAnalytics() {
   const grads = isDark ? iconGrads : iconGradsLight;
 
   const logo = (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
-      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      strokeWidth="2.5"
+    >
+      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
     </svg>
   );
 
   const handleNavClick = (label) => {
     if (label === "Performance") {
-      navigate('/dashboard');
+      navigate("/dashboard");
     } else {
       setActiveNav(label);
     }
@@ -532,7 +539,13 @@ export default function PCSoftAnalytics() {
         }}
       >
         {/* ── Sidebar ──────────────────────────────────────────────────────── */}
-        <Sidebar navItems={navItems} onNavClick={handleNavClick} activeNav={activeNav} theme={T} logo={logo} />
+        <Sidebar
+          navItems={navItems}
+          onNavClick={handleNavClick}
+          activeNav={activeNav}
+          theme={T}
+          logo={logo}
+        />
 
         {/* ── Main ─────────────────────────────────────────────────────────── */}
         <div
