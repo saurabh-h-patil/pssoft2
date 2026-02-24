@@ -515,6 +515,9 @@ export default function Dashboard() {
   const handleNavClick = (label) => {
     if (label === "Analytics") {
       navigate("/analytics");
+    }
+    if (label === "Data Sources") {
+      navigate("/Data Sources");
     } else {
       setActiveNav(label);
     }
