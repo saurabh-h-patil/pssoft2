@@ -6,7 +6,7 @@ import QueryBuilder from "./QueryBuilder.jsx";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<QueryBuilder />} />
       <Route path="/analytics" element={<PCSoftAnalytics />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/datasource" element={<QueryBuilder />} />
